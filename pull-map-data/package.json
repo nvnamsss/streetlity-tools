@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node app",
-    "test": "npm test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/nvnamsss/streetlity-tools/issues"
   },
-  "homepage": "https://github.com/nvnamsss/streetlity-tools#readme"
+  "homepage": "https://github.com/nvnamsss/streetlity-tools#readme",
+  "dependencies": {
+    "build-url": "^2.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0"
+  }
 }
