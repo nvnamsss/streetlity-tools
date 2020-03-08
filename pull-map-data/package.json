@@ -1,0 +1,27 @@
+{
+  "name": "pull-map-data",
+  "version": "1.0.0",
+  "description": "a tool in tools. This tool is using for pulling data from Open Street for Map feature",
+  "main": "app.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvnamsss/streetlity-tools.git"
+  },
+  "keywords": [
+    "tool",
+    "map-feature"
+  ],
+  "author": "nvnamsss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvnamsss/streetlity-tools/issues"
+  },
+  "homepage": "https://github.com/nvnamsss/streetlity-tools#readme"
+}
