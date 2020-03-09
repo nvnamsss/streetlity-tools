@@ -48,12 +48,11 @@ function pull(storageLocation, subarea) {
     let url = buildUrl("http://overpass.openstreetmap.ru",{
         path: url_path,
     });
-    // console.log(url);
+    
     const file = fs.createWriteStream(filename);
     const req = http.get(url, (res) => {
         res.pipe(file);
         logger.info('[Pull] -', filename, 'is pulled');
-        // console.log('Pulled');
     });
 }
 
