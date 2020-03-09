@@ -3,5 +3,8 @@
     <area name='HCMCity'>
         <subarea name='district-2' 
         left='162' bottom='10' right='163' top='11'/>
+
+                <subarea name='district-1' 
+        left='162' bottom='12' right='163' top='13'/>
     </area>            
 </data>

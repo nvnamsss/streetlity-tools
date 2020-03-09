@@ -3,6 +3,9 @@ const fs = require('fs');
 const convert = require('xml-js');
 const path = require('path');
 const buildUrl = require('build-url');
+const log4js = require('log4js');
+const logger = log4js.getLogger();
+logger.level = 'debug';
 
 function mkdirs(folders) {
     return new Promise((resolve, reject) => {
@@ -16,11 +19,14 @@ function mkdirs(folders) {
         fs.mkdirSync(currentDir);
     
         Object.values(folders['data']['area']).forEach(folder => {
-            console.log(folder['_attributes']['name']);
-    
+            
             let dir = path.join(root, today, folder['_attributes']['name']);
             if (!fs.existsSync(dir)) {
+                logger.info('[Mkdir] - creating folder ' + dir);
                 fs.mkdirSync(dir);
+            }
+            else{
+                logger.info('[Mkdir] - folder', dir, 'is existed');
             }
         });
 
@@ -35,15 +41,18 @@ function queryString(subarea){
 }
 
 function pull(storageLocation, subarea) {
+    logger.info('[Pull] - pulling subarea:', subarea)
+
     let filename = path.join(storageLocation, subarea['name'] + ".osm");
     let url_path = 'cgi/xapi_meta' + queryString(subarea);
     let url = buildUrl("http://overpass.openstreetmap.ru",{
         path: url_path,
     });
-    console.log(url);
+    // console.log(url);
     const file = fs.createWriteStream(filename);
     const req = http.get(url, (res) => {
         res.pipe(file);
+        logger.info('[Pull] -', filename, 'is pulled');
         // console.log('Pulled');
     });
 }
@@ -53,7 +62,9 @@ function pulls(currentDir, data){
         Object.values(data['data']['area']).forEach(area => {
             if (area['subarea'] != undefined){
                 let storageLocation = path.join(currentDir, area['_attributes']['name']);
-                pull(storageLocation, area['subarea']['_attributes']);
+                Object.values(area['subarea']).forEach(subarea => {
+                    pull(storageLocation, subarea['_attributes']);
+                });
             }
         });
     });
@@ -62,7 +73,7 @@ function pulls(currentDir, data){
 function main() {
     fs.readFile('./data.xml', function (err, xml_data) {
         let data = convert.xml2json(xml_data, { compact: true, spaces: 4 });
-        console.log(data);
+        // console.log(data);
         mkdirs(JSON.parse(data)).then(currentDir => {
             pulls(currentDir, JSON.parse(data));
         });
