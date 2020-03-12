@@ -7,12 +7,12 @@ using import_data_to_db.Import;
 
 namespace import_data_to_db
 {
-    class Program
+    public class Program
     {
         static MySqlImport import;
-        static Dictionary<int, Node> nodes;
-        static Dictionary<int, Way> ways;
-        static Dictionary<int, Relation> relations;
+        public static Dictionary<int, Node> nodes;
+        public static Dictionary<int, Way> ways;
+        public static Dictionary<int, Relation> relations;
         static void Main(string[] args)
         {
             nodes = new Dictionary<int, Node>();
@@ -109,5 +109,6 @@ namespace import_data_to_db
                 import.ImportRelation(item.Value);
             }
         }
+
     }
 }

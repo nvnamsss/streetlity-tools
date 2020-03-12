@@ -42,7 +42,18 @@ namespace import_data_to_db.Import
         public void ImportWay(Way way)
         {
             StringBuilder sCommand = new StringBuilder();
-            sCommand.Append("INSERT INTO table VALUES");
+            sCommand.Append("INSERT INTO street");
+            sCommand.Append("(");
+            sCommand.Append("id,");
+            sCommand.Append("name,");
+            sCommand.Append("nodes,");
+            sCommand.Append("nodecost,");
+            sCommand.Append("oneway,");
+            sCommand.Append("lanenum,");
+            sCommand.Append("maxspeed,");
+            sCommand.Append("maxspeedperlane,");
+            sCommand.Append(")");
+            sCommand.Append("VALUES");
             sCommand.Append("(");
             sCommand.Append(way.Id);
             sCommand.Append(")");
@@ -57,9 +68,19 @@ namespace import_data_to_db.Import
         public void ImportRelation(Relation relation)
         {
             StringBuilder sCommand = new StringBuilder();
-            sCommand.Append("INSERT INTO table VALUES");
+            sCommand.Append("INSERT INTO street");
             sCommand.Append("(");
-            sCommand.Append(relation.Id);
+            sCommand.Append("id,");
+            sCommand.Append("name,");
+            sCommand.Append("nodes,");
+            sCommand.Append("nodecost,");
+            sCommand.Append("oneway,");
+            sCommand.Append("lanenum,");
+            sCommand.Append("maxspeed,");
+            sCommand.Append("maxspeedperlane,");
+            sCommand.Append(")");
+            sCommand.Append("VALUES");
+            sCommand.Append("(");
             sCommand.Append(")");
 
             MySqlCommand command = new MySqlCommand();
