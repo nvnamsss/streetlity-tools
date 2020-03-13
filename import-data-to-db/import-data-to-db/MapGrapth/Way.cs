@@ -24,7 +24,8 @@ namespace import_data_to_db.MapGrapth
                     long nodeID = long.Parse(e["ref"]);
                     if (Node.Nodes[nodeID].Streets.Contains(this))
                     {
-                        throw new Exception("Street " + Id + " is duplicated");
+                        Console.WriteLine("Street " + Id + " is duplicated");
+                        //throw new Exception("Street " + Id + " is duplicated");
                     }
                     else
                     {
