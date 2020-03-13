@@ -4,21 +4,24 @@ using System.Collections.Generic;
 using System.Xml;
 using System.Linq;
 using import_data_to_db.Import;
+using System.Threading;
+using System.Configuration;
 
 namespace import_data_to_db
 {
     public class Program
     {
         static MySqlImport import;
-        public static Dictionary<int, Node> nodes;
-        public static Dictionary<int, Way> ways;
-        public static Dictionary<int, Relation> relations;
+
+        static ManualResetEvent QuitEvent = new ManualResetEvent(false);
+        static string server = ConfigurationManager.AppSettings["Server"];
+        static string database = ConfigurationManager.AppSettings["Database"];
+        static string username = ConfigurationManager.AppSettings["Username"];
+        static string password = ConfigurationManager.AppSettings["Password"];
+
         static void Main(string[] args)
         {
-            nodes = new Dictionary<int, Node>();
-            ways = new Dictionary<int, Way>();
-            relations = new Dictionary<int, Relation>();
-
+            import = new MySqlImport(server, username, password, database);
             XmlDocument xml = new XmlDocument();
             xml.Load("district-1.osm");
             XmlNode osm = null;
@@ -29,9 +32,9 @@ namespace import_data_to_db
 
             if (osm != null) IterateNode(osm);
 
-            Node n = new Node(1);
-            Console.WriteLine(n);
-            Console.WriteLine("Hello World!");
+            Import();
+
+            QuitEvent.WaitOne();
         }
 
         /// <summary>
@@ -94,20 +97,26 @@ namespace import_data_to_db
 
         static void Import()
         {
-            foreach (KeyValuePair<int, Node> item in nodes)
+            foreach (KeyValuePair<long, Node> item in Node.Nodes)
             {
+#if DEBUG
+                Console.WriteLine(item.Value.GetInsertString());
+#endif
                 import.ImportNode(item.Value);
             }
 
-            foreach (KeyValuePair<int, Way> item in ways)
+            foreach (KeyValuePair<long, Way> item in Way.Ways)
             {
+#if DEBUG
+                Console.WriteLine(item.Value.GetInsertString());
+#endif
                 import.ImportWay(item.Value);
             }
 
-            foreach (KeyValuePair<int, Relation> item in relations)
-            {
-                import.ImportRelation(item.Value);
-            }
+            //foreach (KeyValuePair<int, Relation> item in relations)
+            //{
+            //    import.ImportRelation(item.Value);
+            //}
         }
 
     }

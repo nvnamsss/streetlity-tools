@@ -7,6 +7,7 @@ namespace import_data_to_db.MapGrapth
 {
     public class InformationCollection : IEnumerable
     {
+        public event EventHandler<Information> Added;
         public int Count => _infos.Count;
         public Information this[int index]
         {
@@ -24,6 +25,7 @@ namespace import_data_to_db.MapGrapth
         public void Add(Information info)
         {
             _infos.Add(info);
+            Added?.Invoke(this, info);
         }
 
         public IEnumerator GetEnumerator()
