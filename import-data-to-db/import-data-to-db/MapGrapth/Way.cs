@@ -80,10 +80,11 @@ namespace import_data_to_db.MapGrapth
         public string GetInsertString()
         {
             StringBuilder sCommand = new StringBuilder();
-            sCommand.Append("INSERT INTO street");
+            sCommand.Append("INSERT INTO streets");
             sCommand.Append("(");
             sCommand.Append("id,");
             sCommand.Append("generalinfo,");
+            sCommand.Append("cost,");
             sCommand.Append("oneway,");
             sCommand.Append("onewayfrom");
             sCommand.Append(")");
@@ -91,7 +92,9 @@ namespace import_data_to_db.MapGrapth
             sCommand.Append("(");
             sCommand.Append(Id);
             sCommand.Append(",");
-            sCommand.Append(GeneralInfoValue());
+            sCommand.Append("\"" + GeneralInfoValue() + "\"");
+            sCommand.Append(",");
+            sCommand.Append(0);
             sCommand.Append(",");
             sCommand.Append(true);
             sCommand.Append(",");

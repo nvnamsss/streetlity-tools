@@ -10,4 +10,10 @@
     <PackageReference Include="MySql.Data" Version="8.0.19" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="district-1.osm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

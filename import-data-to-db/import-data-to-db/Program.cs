@@ -34,7 +34,8 @@ namespace import_data_to_db
 
             Import();
 
-            QuitEvent.WaitOne();
+            Console.ReadKey();
+            //QuitEvent.WaitOne();
         }
 
         /// <summary>
@@ -117,6 +118,8 @@ namespace import_data_to_db
             //{
             //    import.ImportRelation(item.Value);
             //}
+
+            //QuitEvent.Set();
         }
 
     }

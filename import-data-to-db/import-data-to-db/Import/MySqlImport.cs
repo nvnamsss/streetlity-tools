@@ -53,7 +53,7 @@ namespace import_data_to_db.Import
             sCommand.Append("id,");
             sCommand.Append("name,");
             sCommand.Append("nodes,");
-            sCommand.Append("nodecost,");
+            sCommand.Append("coo,");
             sCommand.Append("oneway,");
             sCommand.Append("lanenum,");
             sCommand.Append("maxspeed,");

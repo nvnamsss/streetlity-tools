@@ -70,7 +70,7 @@ namespace import_data_to_db.MapGrapth
             sCommand.Append(",");
             sCommand.Append(Longitude);
             sCommand.Append(",");
-            sCommand.Append(StreetValue());
+            sCommand.Append("\"" + StreetValue() + "\"");
             sCommand.Append(")");
 
             return sCommand.ToString();
