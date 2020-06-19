@@ -1,4 +1,5 @@
 ﻿using import_data_to_db.MapGrapth;
+using import_data_to_db.Services;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -66,6 +67,17 @@ namespace import_data_to_db.Import
             MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = "INSERT INTO table VALUES()";
+
+            command.ExecuteNonQuery();
+        }
+
+        public void ImportService(Service service)
+        {
+            string sCommand = service.GetInsertString();
+
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = _connection;
+            command.CommandText = sCommand;
 
             command.ExecuteNonQuery();
         }

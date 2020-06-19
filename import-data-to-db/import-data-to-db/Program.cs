@@ -6,6 +6,7 @@ using System.Linq;
 using import_data_to_db.Import;
 using System.Threading;
 using System.Configuration;
+using import_data_to_db.Services;
 
 namespace import_data_to_db
 {
@@ -50,6 +51,30 @@ namespace import_data_to_db
                 if (node != null)
                 {
                     IterateInformation(node, item);
+                }
+
+                if (node is Node nd)
+                {
+                    foreach (Information info in node.Informations)
+                    {
+                        switch (info["amenity"])
+                        {
+                            case Atm.Amenity:
+                                new Atm(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                break;
+                            case Fuel.Amenity:
+                                new Fuel(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                break;
+                            case Toilet.Amenity:
+                                new Toilet(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                break;
+                            case Maintenance.Amenity:
+                                new Maintenance(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
                 }
             }
         }
@@ -114,6 +139,25 @@ namespace import_data_to_db
                 import.ImportWay(item.Value);
             }
 
+            foreach (KeyValuePair<long, Atm> item in Atm.Atms)
+            {
+                import.ImportService(item.Value);
+            }
+
+            foreach (KeyValuePair<long, Fuel> item in Fuel.Fuels)
+            {
+                import.ImportService(item.Value);
+            }
+
+            foreach (KeyValuePair<long, Toilet> item in Toilet.Toilets)
+            {
+                import.ImportService(item.Value);
+            }
+
+            foreach (KeyValuePair<long, Maintenance> item in Maintenance.Maintenances)
+            {
+                import.ImportService(item.Value);
+            }
             //foreach (KeyValuePair<int, Relation> item in relations)
             //{
             //    import.ImportRelation(item.Value);
