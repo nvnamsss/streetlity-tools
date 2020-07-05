@@ -7,6 +7,7 @@ using import_data_to_db.Import;
 using System.Threading;
 using System.Configuration;
 using import_data_to_db.Services;
+using import_data_to_db.Export;
 
 namespace import_data_to_db
 {
@@ -22,7 +23,7 @@ namespace import_data_to_db
 
         static void Main(string[] args)
         {
-            import = new MySqlImport(server, username, password, database);
+            //import = new MySqlImport(server, username, password, database);
             XmlDocument xml = new XmlDocument();
             xml.Load("district-1.osm");
             XmlNode osm = null;
@@ -33,8 +34,12 @@ namespace import_data_to_db
 
             if (osm != null) IterateNode(osm);
 
-            Import();
-
+            //Import();
+            RawTextExporter exporter = new RawTextExporter();
+            exporter.ExportFile("district-1-atm.txt", Atm.Atms.Values.Cast<Atm>().ToList());
+            exporter.ExportFile("district-1-fuel.txt", Fuel.Fuels.Values.Cast<Fuel>().ToList());
+            exporter.ExportFile("district-1-maintenance.txt", Maintenance.Maintenances.Values.Cast<Maintenance>().ToList());
+            exporter.ExportFile("district-1-toilet.txt", Toilet.Toilets.Values.Cast<Toilet>().ToList());
             Console.ReadKey();
             //QuitEvent.WaitOne();
         }
@@ -57,19 +62,21 @@ namespace import_data_to_db
                 {
                     foreach (Information info in node.Informations)
                     {
+                        if (!info.Contains("amenity")) continue;
+
                         switch (info["amenity"])
                         {
                             case Atm.Amenity:
-                                new Atm(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                Atm.Create(nd, info);
                                 break;
                             case Fuel.Amenity:
-                                new Fuel(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                Fuel.Create(nd, info);
                                 break;
                             case Toilet.Amenity:
-                                new Toilet(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                Toilet.Create(nd, info);
                                 break;
                             case Maintenance.Amenity:
-                                new Maintenance(nd.Id, nd.Latitude, nd.Longitude, string.Empty);
+                                Maintenance.Create(nd, info);
                                 break;
                             default:
                                 break;
@@ -113,10 +120,20 @@ namespace import_data_to_db
             foreach (XmlNode item in xmlnode.ChildNodes)
             {
                 Information info = new Information(item.Name);
-                foreach (XmlAttribute att in item.Attributes)
+                XmlAttributeCollection collection = item.Attributes;
+                switch (collection.Count)
                 {
-                    info.Add(att.Name, att.Value);
+                    case 1:
+                        info.Add(collection[0].Name, collection[0].Value);
+                        break;
+                    case 2:
+                        info.Add(collection[0].Value, collection[1].Value);
+                        break;
                 }
+                //foreach (XmlAttribute att in item.Attributes)
+                //{
+                //    info.Add(att.Name, att.Value);
+                //}
                 node.Informations.Add(info);
             }
         }
