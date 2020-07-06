@@ -16,6 +16,20 @@ namespace import_data_to_db.MapGrapth
                 return _infos[index];
             }
         }
+
+        public List<Information> this[string name]
+        {
+            get
+            {
+                List<Information> rs = new List<Information>();
+                foreach (Information info in _infos)
+                {
+                    if (info.Name == name) rs.Add(info);
+                }
+                return rs;
+            }
+        }
+
         private List<Information> _infos;
         public InformationCollection()
         {

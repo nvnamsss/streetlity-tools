@@ -8,6 +8,7 @@ using System.Threading;
 using System.Configuration;
 using import_data_to_db.Services;
 using import_data_to_db.Export;
+using System.Threading.Tasks;
 
 namespace import_data_to_db
 {
@@ -35,13 +36,44 @@ namespace import_data_to_db
             if (osm != null) IterateNode(osm);
 
             //Import();
+            Task t = ExportServices();
+            t.Wait();
+
+            Console.WriteLine("Completed, press Ctrl + C to quit");
+            QuitEvent.WaitOne();
+        }
+
+        static async Task ExportServices()
+        {
+            List<Atm> @as = Atm.Atms.Values.Cast<Atm>().ToList();
+            //foreach (Atm a in @as)
+            //{
+            //    await a.ReverseGeocoding();
+            //}
+
+            List<Fuel> fs = Fuel.Fuels.Values.Cast<Fuel>().ToList();
+            //foreach (Fuel f in fs)
+            //{
+            //    await f.ReverseGeocoding();
+            //}
+
+            List<Maintenance> ms = Maintenance.Maintenances.Values.Cast<Maintenance>().ToList();
+            //foreach (Maintenance m in ms)
+            //{
+            //    await m.ReverseGeocoding();
+            //}
+
+            List<Toilet> ts = Toilet.Toilets.Values.Cast<Toilet>().ToList();
+            //foreach (Toilet t in ts)
+            //{
+            //    await t.ReverseGeocoding();
+            //}
+
             RawTextExporter exporter = new RawTextExporter();
-            exporter.ExportFile("district-1-atm.txt", Atm.Atms.Values.Cast<Atm>().ToList());
-            exporter.ExportFile("district-1-fuel.txt", Fuel.Fuels.Values.Cast<Fuel>().ToList());
-            exporter.ExportFile("district-1-maintenance.txt", Maintenance.Maintenances.Values.Cast<Maintenance>().ToList());
-            exporter.ExportFile("district-1-toilet.txt", Toilet.Toilets.Values.Cast<Toilet>().ToList());
-            Console.ReadKey();
-            //QuitEvent.WaitOne();
+            exporter.ExportFile("district-1-atm.txt", @as);
+            exporter.ExportFile("district-1-fuel.txt", fs);
+            exporter.ExportFile("district-1-maintenance.txt", ms);
+            exporter.ExportFile("district-1-toilet.txt", ts);
         }
 
         /// <summary>
@@ -67,16 +99,16 @@ namespace import_data_to_db
                         switch (info["amenity"])
                         {
                             case Atm.Amenity:
-                                Atm.Create(nd, info);
+                                Atm.Create(nd);
                                 break;
                             case Fuel.Amenity:
-                                Fuel.Create(nd, info);
+                                Fuel.Create(nd);
                                 break;
                             case Toilet.Amenity:
-                                Toilet.Create(nd, info);
+                                Toilet.Create(nd);
                                 break;
                             case Maintenance.Amenity:
-                                Maintenance.Create(nd, info);
+                                Maintenance.Create(nd);
                                 break;
                             default:
                                 break;

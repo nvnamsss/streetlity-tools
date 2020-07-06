@@ -43,21 +43,27 @@ namespace import_data_to_db.Services
             s += "id:" + Id + ";";
             s += "lat:" + Latitude + ";";
             s += "lon:" + Longitude + ";";
+            s += "address:" + Address + ";";
             s += "name:" + Name + ";";
             return s;
         }
 
-        public static Atm Create(Node node, Information info)
+        public static Atm Create(Node node)
         {
+            InformationCollection infos = node.Informations;
             string name = string.Empty;
-            if (info.Contains("name"))
+            List<Information> l = infos["tag"];
+            foreach (Information info in l)
             {
-                name = info["name"];
-            }
+                if (info.Contains("name"))
+                {
+                    name = info["name"];
+                }
 
-            if (info.Contains("operator"))
-            {
-                name = info["operator"];
+                if (info.Contains("operator"))
+                {
+                    name = info["operator"];
+                }
             }
 
             Atm a = new Atm(node.Id, node.Latitude, node.Longitude, name);

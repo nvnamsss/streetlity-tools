@@ -26,13 +26,23 @@ namespace import_data_to_db.Services
             s += "id:" + Id + ";";
             s += "lat:" + Latitude + ";";
             s += "lon:" + Longitude + ";";
+            s += "address:" + Address + ";";
             s += "name:" + Name + ";";
             return s;
         }
 
-        public static Fuel Create(Node node, Information info)
+        public static Fuel Create(Node node)
         {
-            string name = info.Contains("name") ? info["name"] : string.Empty;
+            InformationCollection infos = node.Informations;
+            List<Information> l = infos["tag"];
+            string name = string.Empty;
+            foreach (Information info in l)
+            {
+                if (info.Contains("name"))
+                {
+                    name = info["name"];
+                }
+            }
             Fuel f = new Fuel(node.Id, node.Latitude, node.Longitude, name);
             return f;
         }
