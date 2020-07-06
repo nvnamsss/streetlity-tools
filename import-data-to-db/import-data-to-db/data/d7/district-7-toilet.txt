@@ -1,0 +1,2 @@
+toilets;id:3744277203;lat:10.72531;lon:106.71661;address:Đường N - Nam, Tân Phú, Quận 7, Hồ Chí Minh, Vietnam;name:;
+toilets;id:3744277221;lat:10.726823;lon:106.716484;address:101 Khu Phố Mỹ Hào, Tân Phú, Quận 7, Hồ Chí Minh, Vietnam;name:;

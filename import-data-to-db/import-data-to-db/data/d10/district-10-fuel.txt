@@ -1,0 +1,18 @@
+fuel;id:729604412;lat:10.770683;lon:106.68934;address:133 Lê Thị Riêng, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam;name:Trạm xăng dầu số 9;
+fuel;id:729604425;lat:10.768419;lon:106.65123;address:44 Bình Thới, Phường 11, Quận 11, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604487;lat:10.780173;lon:106.668274;address:132/1B/2 Tô Hiến Thành, Phường 15, Quận 10, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604506;lat:10.7856245;lon:106.65002;address:911/33 Lạc Long Quân, Phường 11, Tân Bình, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604553;lat:10.783558;lon:106.654305;address:2 Lý Thường Kiệt, Phường 8, Tân Bình, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604622;lat:10.776102;lon:106.64896;address:541 Lạc Long Quân, Phường 9, Tân Bình, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604627;lat:10.785907;lon:106.690216;address:244 Pasteur, Phường 6, Quận 3, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604852;lat:10.789157;lon:106.65268;address:605 Lý Thường Kiệt, Phường 8, Tân Bình, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604853;lat:10.772034;lon:106.6686;address:Hẻm 421 Sư Vạn Hạnh, Phường 12, Quận 10, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604875;lat:10.770939;lon:106.65782;address:231 Ly Thuong Kiet Street, Ward 15, District 11, Ho Chi Minh City, Phường 15, Quận 11, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604929;lat:10.78796;lon:106.678116;address:20 Trần Quang Diệu, Phường 14, Quận 3, Hồ Chí Minh, Vietnam;name:Petrolimex;
+fuel;id:729604950;lat:10.78137;lon:106.65485;address:403 Lý Thường Kiệt, Phường 8, Tân Bình, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604997;lat:10.779402;lon:106.67842;address:303 Cách Mạng Tháng 8 Tổ 20, Khu phố Khu phố, Phường 12, Quận 10, Hồ Chí Minh, Vietnam;name:Petrolimex;
+fuel;id:2326576314;lat:10.782565;lon:106.683784;address:70 Trương Định, Phường 7, Quận 3, Hồ Chí Minh, Vietnam;name:Petrolimex;
+fuel;id:2942880407;lat:10.778347;lon:106.65624;address:317 Lý Thường Kiệt, Phường 15, Quận 10, Hồ Chí Minh, Vietnam;name:;
+fuel;id:4628048108;lat:10.775138;lon:106.65665;address:283C Lý Thường Kiệt, Phường 15, Quận 11, Hồ Chí Minh, Vietnam;name:Cửa hàng xăng dầu Số 11;
+fuel;id:4996008683;lat:10.784233;lon:106.67013;address:Chợ Hòa Hưng, phường 11, Quận 3, Hồ Chí Minh, Vietnam;name:Comeco;
+fuel;id:5204836924;lat:10.7869835;lon:106.69112;address:150 Võ Thị Sáu, Phường 6, Quận 3, Hồ Chí Minh, Vietnam;name:Trạm Xăng;

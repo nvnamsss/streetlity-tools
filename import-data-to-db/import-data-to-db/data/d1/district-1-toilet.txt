@@ -1,0 +1,13 @@
+toilets;id:943230053;lat:10.777144;lon:106.70698;address:5A Đ. Tôn Đức Thắng, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:Toilet Công Cộng;
+toilets;id:1769477888;lat:10.770981;lon:106.69656;address:Khách sạn New world, Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:2927364603;lat:10.775134;lon:106.69305;address:Trương Định, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4595319755;lat:10.772819;lon:106.69744;address:Chợ Bến Thành, Đ. Lê Lợi, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4595319807;lat:10.773155;lon:106.69807;address:8 Thủ Khoa Huân, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4600756851;lat:10.774782;lon:106.70036;address:63/2 Pasteur, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4627619328;lat:10.7731905;lon:106.70441;address:69 Nguyễn Huệ, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4765806421;lat:10.776609;lon:106.69915;address:46 Lý Tự Trọng, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5181704521;lat:10.774892;lon:106.69082;address:57 Nguyễn Thị Minh Khai, Phường 6, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5305789221;lat:10.772219;lon:106.70658;address:Ho Chi Minh City Passenger Ferry Port, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5306320225;lat:10.772551;lon:106.69284;address:159 Nguyễn Du, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5416327329;lat:10.772827;lon:106.706726;address:Hotel Majestic, 1 Đồng Khởi, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:7211524985;lat:10.776227;lon:106.691765;address:55 Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;

@@ -1,0 +1,8 @@
+fuel;id:729604446;lat:10.836694;lon:106.657036;address:P8, Q., 722 Quang Trung, Phường 8, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604514;lat:10.835321;lon:106.66228;address:304A Quang Trung, Phường 11, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604581;lat:10.836435;lon:106.657814;address:685, Quang Trung, Phường 11, Quận Gò Vấp, Thành Phố Hồ Chí Minh, Thành Phố Hồ Chí Minh, Phường 8, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604682;lat:10.8493595;lon:106.65062;address:69 Phạm Văn Chiêu, Phường 9, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729604813;lat:10.849201;lon:106.664734;address:14/7, Đường Thống Nhất, Phường 16, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:729605007;lat:10.835845;lon:106.66111;address:618 Quang Trung, Phường 8, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:4307031806;lat:10.850171;lon:106.65254;address:226 Phạm Văn Chiêu, Phường 9, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+fuel;id:6770694317;lat:10.836639;lon:106.681076;address:184 Lê Đức Thọ, Phường 5, Gò Vấp, Hồ Chí Minh, Vietnam;name:Circle K;

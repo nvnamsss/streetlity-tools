@@ -1,0 +1,8 @@
+toilets;id:2609878893;lat:10.782371;lon:106.67746;address:60 Trần Văn Đang, Phường 10, Quận 3, Hồ Chí Minh, Vietnam;name:;
+toilets;id:4610730733;lat:10.768834;lon:106.691154;address:178 Lê Lai, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5181704521;lat:10.774892;lon:106.69082;address:57 Nguyễn Thị Minh Khai, Phường 6, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5406932823;lat:10.767777;lon:106.68896;address:179 Đ. Nguyễn Trãi, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5406936325;lat:10.767608;lon:106.69029;address:325 Phạm Ngũ Lão, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5598918364;lat:10.770858;lon:106.669334;address:Hẻm Vạn Hạnh Mall, Phường 12, Quận 10, Hồ Chí Minh, Vietnam;name:;
+toilets;id:6791942986;lat:10.771055;lon:106.67281;address:703 Lê Hồng Phong, Phường 12, Quận 10, Hồ Chí Minh, Vietnam;name:;
+toilets;id:7211524985;lat:10.776227;lon:106.691765;address:55 Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1, Hồ Chí Minh, Vietnam;name:;

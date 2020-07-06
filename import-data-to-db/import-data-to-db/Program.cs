@@ -15,7 +15,7 @@ namespace import_data_to_db
     public class Program
     {
         static MySqlImport import;
-
+        static string file = "govap";
         static ManualResetEvent QuitEvent = new ManualResetEvent(false);
         static string server = ConfigurationManager.AppSettings["Server"];
         static string database = ConfigurationManager.AppSettings["Database"];
@@ -26,7 +26,7 @@ namespace import_data_to_db
         {
             //import = new MySqlImport(server, username, password, database);
             XmlDocument xml = new XmlDocument();
-            xml.Load("district-1.osm");
+            xml.Load(file + ".osm");
             XmlNode osm = null;
             foreach (XmlNode item in xml?.ChildNodes)
             {
@@ -70,10 +70,10 @@ namespace import_data_to_db
             //}
 
             RawTextExporter exporter = new RawTextExporter();
-            exporter.ExportFile("district-1-atm.txt", @as);
-            exporter.ExportFile("district-1-fuel.txt", fs);
-            exporter.ExportFile("district-1-maintenance.txt", ms);
-            exporter.ExportFile("district-1-toilet.txt", ts);
+            exporter.ExportFile(file + "-atm.txt", @as);
+            exporter.ExportFile(file + "-fuel.txt", fs);
+            exporter.ExportFile(file + "-maintenance.txt", ms);
+            exporter.ExportFile(file + "-toilet.txt", ts);
         }
 
         /// <summary>

@@ -1,0 +1,5 @@
+toilets;id:943230053;lat:10.777144;lon:106.70698;address:5A Đ. Tôn Đức Thắng, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:Toilet Công Cộng;
+toilets;id:5305789221;lat:10.772219;lon:106.70658;address:Ho Chi Minh City Passenger Ferry Port, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:5416327329;lat:10.772827;lon:106.706726;address:Hotel Majestic, 1 Đồng Khởi, Bến Nghé, Quận 1, Hồ Chí Minh, Vietnam;name:;
+toilets;id:6045633937;lat:10.788442;lon:106.707054;address:62/4A Nguyễn Ngọc Phương, Phường 19, Bình Thạnh, Hồ Chí Minh, Vietnam;name:;
+toilets;id:6512373937;lat:10.786003;lon:106.712585;address:Bến Nghé, District 1, Ho Chi Minh City, Vietnam;name:;

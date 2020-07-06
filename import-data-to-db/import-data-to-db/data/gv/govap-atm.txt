@@ -1,0 +1,17 @@
+atm;id:2513576349;lat:10.834438;lon:106.668144;address:3 Đường Số 7, Phường 10, Gò Vấp, Hồ Chí Minh, Vietnam;name:Techcombank;
+atm;id:2513576351;lat:10.838112;lon:106.65282;address:Trường THPT Nguyễn Công Trứ, phường 8, Gò Vấp, Hồ Chí Minh, Vietnam;name:Techcombank;
+atm;id:2513576354;lat:10.847569;lon:106.668205;address:631 Lê Đức Thọ, Phường 16, Gò Vấp, Hồ Chí Minh, Vietnam;name:Techcombank;
+atm;id:2513576355;lat:10.848617;lon:106.648476;address:44/1E Phạm Văn Chiêu, Phường 14, Gò Vấp, Hồ Chí Minh, Vietnam;name:Techcombank;
+atm;id:2513576356;lat:10.851665;lon:106.657616;address:Trung tâm Văn hóa Quận Gò Vấp, Phường 13, Gò Vấp, Hồ Chí Minh, Vietnam;name:ngân hàng techcombank;
+atm;id:4815778322;lat:10.84996;lon:106.679306;address:33 Hẻm Số 1 Nguyễn Văn Dung, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:kfc gò vấp;
+atm;id:4815782423;lat:10.848136;lon:106.67926;address:134 Đường Nguyễn Văn Dung, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:Abc;
+atm;id:4815782424;lat:10.85038;lon:106.68169;address:90 Đường Nguyễn Văn Dung, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:Kfc gò vấp;
+atm;id:4815782425;lat:10.845892;lon:106.680214;address:43 Hẻm 110 Đường 30, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:Vtd gò vấp;
+atm;id:4815782426;lat:10.849058;lon:106.679214;address:36 Hẻm Số 1 Nguyễn Văn Dung, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:Abc;
+atm;id:4815784921;lat:10.84466;lon:106.678314;address:92 Số 30, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:vtd gò vấp;
+atm;id:4815789921;lat:10.850401;lon:106.68169;address:90 Đường Nguyễn Văn Dung, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:Kfc gò vấp;
+atm;id:5189616026;lat:10.849476;lon:106.66436;address:110, Đường Thống Nhất, Phường 16, Quận Gò Vấp, Phường 16, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+atm;id:5189618421;lat:10.850064;lon:106.66436;address:1000 Lê Đức Thọ, Phường 16, Gò Vấp, Hồ Chí Minh, Vietnam;name:;
+atm;id:6751287635;lat:10.844486;lon:106.65597;address:248 Đường số 9, Phường 9, Gò Vấp, Hồ Chí Minh, Vietnam;name:Vietin Bank;
+atm;id:6759753423;lat:10.838733;lon:106.6724;address:210 Nguyễn Văn Lượng, Phường 17, Gò Vấp, Hồ Chí Minh, Vietnam;name:Vietcom Bank;
+atm;id:6774924207;lat:10.843549;lon:106.67705;address:343 Nguyễn Oanh, Phường 6, Gò Vấp, Hồ Chí Minh, Vietnam;name:MSB;
