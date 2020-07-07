@@ -15,7 +15,7 @@ namespace import_data_to_db
     public class Program
     {
         static MySqlImport import;
-        static string file = "govap";
+        static string file = "td3";
         static ManualResetEvent QuitEvent = new ManualResetEvent(false);
         static string server = ConfigurationManager.AppSettings["Server"];
         static string database = ConfigurationManager.AppSettings["Database"];

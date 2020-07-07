@@ -1,0 +1,3 @@
+maintenance;lat:10.785640;lon:106.730300;address:4/7A Lương Định Của, P. Bình An, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm sửa xe Thanh Thọ;
+maintenance;lat:10.785640;lon:106.730300;address:505 Kha Vạn Cân, Linh Đông, Thủ Đức, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Trung Tín Thủ Đức;
+maintenance;lat:10.785640;lon:106.730300;address:18 Đường số 10, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Nhật Huy;
