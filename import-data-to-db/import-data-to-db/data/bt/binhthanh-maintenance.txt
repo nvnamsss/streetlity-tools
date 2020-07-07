@@ -1,0 +1,3 @@
+maintenance;id:30;lat:10.800941;lon:106.723139;address:340 Ung Văn Khiêm, Phường 25, Bình Thạnh, Hồ Chí Minh, Vietnam;name:Sửa xe Hùng Phát;
+maintenance;id:30;lat:10.798502;lon:106.720455;address:635 Điện Biên Phủ, Phường 25, Bình Thạnh, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Thảo Nguyên;
+maintenance;id:30;lat:10.797782;lon:106.106712055;address:48C Xô Viết Nghệ Tĩnh, Phường 21, Bình Thạnh, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Máy Hùng;

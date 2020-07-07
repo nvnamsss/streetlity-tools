@@ -1,3 +1,9 @@
 maintenance;lat:10.785640;lon:106.730300;address:4/7A Lương Định Của, P. Bình An, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm sửa xe Thanh Thọ;
-maintenance;lat:10.785640;lon:106.730300;address:505 Kha Vạn Cân, Linh Đông, Thủ Đức, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Trung Tín Thủ Đức;
-maintenance;lat:10.785640;lon:106.730300;address:18 Đường số 10, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Nhật Huy;
+maintenance;lat:10.778029;lon:106.765008;address:18 Đường số 10, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Nhật Huy;
+maintenance;lat:10.786732;lon:106.776416;address:31, Đường 7, Phường Thạnh Mỹ Lợi, Quận 2, Thành Phố Hồ Chí Minh, Thành Phố Hồ Chí Minh, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Honda Tay Ga Tuấn;
+maintenance;lat:10.780196;lon:106.762404;address:486 Nguyễn Thị Định, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Máy Hào;
+maintenance;lat:10.77985;lon:106.768855;address:233 Đường Lê Văn Thịnh, Cát Lái, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm sửa Xe Mạnh Quân;
+maintenance;lat:10.784452;lon:106.76895;address:100 Đường Lê Văn Thịnh, Phường Bình Trưng Tây, Quận 2, Hồ Chí Minh, Vietnam;name:TIỆM SỬA XE - RỬA XE MINH QUÝ;
+maintenance;lat:10.777755;lon:106.759088;address:Đường Số 4, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh, Vietnam;name:Tiệm Sửa Xe Hoàng Hà;
+maintenance;lat:10.801913;lon:106.764748;address:Đường Số 4, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh, Vietnam;name:Sửa xe máy Song Hành;
+
